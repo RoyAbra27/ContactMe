@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="icon" type="image/favicon" href="background/favicon-16x16.png">
+    <style>
+        body {
+            font-family: Tahoma, Verdana, sans-serif;
+            background-image: url(background/back.jpg);
+            background-size: 100%;
+        }
+
+        .groove {
+            border-style: groove;
+            margin: auto;
+            width: 12%;
+            padding: 10px;
+            margin-top: 15%;
+            color: rgb(255, 255, 255);
+        }
+
+        .btn {
+            text-align: center;
+            cursor: pointer;
+            background-color: rgba(24, 24, 126, 0.548);
+            color: white;
+            border: none;
+            width: 80px;
+            height: 30px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .groove {
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="groove" style=" background-color: rgba(0, 0, 0, 0.253); font-size: 1.3vw; width: 300px;">
+        <form action="results.html">
+            <h1 style="text-align: center;">Contact Us!</h1>
+            <h2 style="font-size: 15px;">leave your information down below:</h2>
+
+            <Div style="text-align: center;">
+                <label for="fname"><strong>First name:</strong></label><br>
+                <input type="text" id="fname" name="fname" placeholder="your first name" style="height: 1.6vw;" ><br> <br>
+            </Div>
+
+            <Div style="text-align: center;">
+                <label for="lname"><strong>Last name:</strong></label><br>
+                <input type="text" id="lname" name="lname" placeholder="your last name" style="height: 1.6vw;"><br> <br>
+            </Div>
+
+            <div style="text-align: center;">
+                <label for="age"><strong>Age:</strong></label><br>
+                <input type="text" name="age" placeholder="your age" style="height: 1.6vw;"> <br> <br>
+            </div>
+
+           
+                <P style="text-align: center;"> <strong>Your gender:</strong></P>
+                <div style="margin-left: 30%;">
+                <input type="radio" name="gender" value="Male">
+                <label for="Male">Male</label><br>
+                <input type="radio" name="gender" value="Female">
+                <label for="female">Female</label><br> <br>
+            </div>
+
+            <div style="text-align: center;">
+                <label for="phone"><strong>Phone number:</strong></label><br>
+                <select name="phone" id="phone">
+                    <option value="050">050</option>
+                    <option value="051">051</option>
+                    <option value="052">052</option>
+                    <option value="053">053</option>
+                    <option value="054">054</option>
+                    <option value="055">055</option>
+                    <option value="052">058</option>
+                </select>
+                <input style="width: 60%;" type="text" name="phone" maxlength="7"><br> <br>
+            </div>
+
+            <div style="text-align: center;">
+                <input type="submit" class="btn" value="Contact me">
+                <input type="reset" class="btn" value="Reset">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+
+</html>
